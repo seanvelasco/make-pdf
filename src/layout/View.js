@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { device } from '../constants/device'
 
-const Wrapper = styled.div`
+const View = styled.div`
     flex: 1;
     iframe {
         display: block;
@@ -16,12 +16,5 @@ const Wrapper = styled.div`
     }
 `;
 
-const Viewport = ({ src, title }) => {
-    return (
-        <Wrapper>
-            <iframe title={title} src={src} />
-        </Wrapper>
-    )
-}
+export default View;
 
-export default Viewport;
